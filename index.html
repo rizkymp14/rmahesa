@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tugas</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+<div class="w3-container">
+	<img src="wwwy.jpg" style="width: 20%">
+</div>
+	<div class="w3-bar w3-black">
+	  <button class="w3-bar-item w3-button" onclick="openBand('Profile')">Profile</button>
+	  <button class="w3-bar-item w3-button" onclick="openBand('Bring Me The Horizon')">Bring Me The Horizon</button> 
+	  <button class="w3-bar-item w3-button" onclick="openBand('Paramore')">Paramore</button>
+	  <button class="w3-bar-item w3-button" onclick="openBand('My Chemical Romance')">My Chemical Romance</button>
+	  <button class="w3-bar-item w3-button" onclick="openBand('Avril Lavigne')">Avril Lavigne</button>
+	</div>
+
+<div id="Profile" class="w3-container band" style="display:none">
+  <h2>
+  <p>NIM   : 10121322</p>
+  <p>Nama  : Rizky Mahesa Putra</p>
+  <p>Kelas : IF-4</p>
+  </h2>
+</div>
+
+<div id="Bring Me The Horizon" class="w3-container band" style="display: none">
+  <h2>Bring Me The Horizon</h2>
+  <div class="w3-container"> 
+    <img class="w3-animate-fading" src="bmth.jpg" style="width:20%"> 
+  </div>
+ </div>
+ 
+<div id="Paramore" class="w3-container band" style="display: none">
+   <h2>paramore</h2>
+     <img class="w3-animate-bottom" src="paramore.jpg" width="20%">
+</div> 
+    
+<div id="My Chemical Romance" class="w3-container band" style="display:none">
+   <h2>My Chemical Romance</h2>
+   <div class="w3-container">
+     <img class="w3-animate-top" src="mcr.jpg" style="width:20%">
+   </div>
+</div>
+   
+<div id="Avril Lavigne" class="w3-container band" style="display:none">
+   <h2>Avril Lavigne</h2>
+   <div class="w3-container">
+     <img class="w3-animate-zoom" src="al.jpg" style="width:20%">
+   </div>
+</div>
+   
+<script>
+function openBand(namaBand) {
+  var i;
+  var x = document.getElementsByClassName("band");
+  for (i = 0; i < x.length; i++) {
+  x[i].style.display = "none"; 
+  }
+  document.getElementById(namaBand).style.display = "block"; 
+}
+</script>
+
+</body>
+</html>
